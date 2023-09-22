@@ -15,7 +15,7 @@
  * - ESPHome 1.19.1 or greater
  */
 
-// #define USE_CALLBACKS
+#define USE_CALLBACKS
 
 #include "esphome.h"
 #include "esphome/core/preferences.h"
@@ -28,7 +28,7 @@ using namespace esphome;
 
 static const char* TAG = "MitsubishiHeatPump"; // Logging tag
 
-static const char* ESPMHP_VERSION = "2.4.2";
+static const char* ESPMHP_VERSION = "2.4.3";
 
 /* If polling interval is greater than 9 seconds, the HeatPump
 library reconnects, but doesn't then follow up with our data request.*/
